@@ -174,7 +174,7 @@ words.txt
 ```
 
 ---
-#Future Improvements
+# Future Improvements
 
 The project is currently focused on SHA-256 hashing, but support for additional hashing algorithms can be added in future versions, including:
 
