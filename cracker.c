@@ -39,7 +39,7 @@ void sha256_string(const char *str, char outputBuffer[65]) {
     outputBuffer[64] = '\0';
 }
 
-// Recursive brute force
+// recursive brute force
 void brute_force_recursive(char *current, int position, int length, ThreadData *data) {
     if (found) return;
 
@@ -73,7 +73,7 @@ void brute_force_recursive(char *current, int position, int length, ThreadData *
     }
 }
 
-// Thread worker
+// thread 
 void *thread_worker(void *arg) {
     ThreadData *data = (ThreadData *)arg;
     char current[MAX_LEN + 1];
@@ -114,7 +114,7 @@ void *thread_worker(void *arg) {
     pthread_exit(NULL);
 }
 
-// Wordlist attack
+// wordlist attack
 void crack_with_wordlist() {
     FILE *fp = fopen(wordlist_file, "r");
     if (!fp) {
@@ -153,7 +153,7 @@ void crack_with_wordlist() {
     fclose(fp);
 }
 
-// MAIN
+
 int main(int argc, char *argv[]) {
 
     if (argc == 1 || strcmp(argv[1], "--help") == 0) {
