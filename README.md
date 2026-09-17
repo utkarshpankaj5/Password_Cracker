@@ -276,34 +276,7 @@ Run:
 
 ---
 
-## 📁 Project Structure
 
-The project is being organized into separate modules so that new functionality can be added without making the code difficult to maintain.
-
-```text
-PasswordSecurityAnalyzer/
-│
-├── src/
-│   ├── main.c
-│   │
-│   ├── menu.c
-│   ├── menu.h
-│   │
-│   ├── hash.c
-│   ├── hash.h
-│   │
-│   ├── cracker.c
-│   ├── cracker.h
-│   │
-│   ├── analyzer.c
-│   └── analyzer.h
-│
-├── data/
-│   └── dictionary.txt
-│
-├── README.md
-└── Makefile
-```
 
 ### Module Responsibilities
 
